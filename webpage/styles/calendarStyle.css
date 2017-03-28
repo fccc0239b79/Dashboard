@@ -1,0 +1,262 @@
+#calendarPanel {
+    width: 25em;
+    height: 13em;
+    border: solid 5px;
+    border-radius: 1em;
+    border-color: white;
+    box-shadow: 0px 0px 50px white;
+    margin: 1em 1em 1em 1em;
+    background: black;
+    display: block;
+    /*  position: relative; */
+    /*color: white;*/
+}
+
+p {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#calendarTime {
+    color: white;
+    font-size: 64px;&#10094;
+    text-align: center;
+}
+
+#calendarDay {
+    color: white;
+    font-size: 52px;&#10094;
+    text-align: center;
+}
+
+#calendarDate {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+#calendarDate:hover {
+    text-shadow: 0px 0px 40px white;
+    color: #ffc;
+}
+
+
+/*----------------------------Full-Calendar-Panel-----------------------------*/
+
+#calendarContainer {
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 1em;
+    border-color: white;
+    box-shadow: 0 0 50px white;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#calendarMonth {
+    padding: 40px 25px;
+    width: 100%;
+    background: white;
+    border-radius: 0.7em 0.7em 0 0;
+}
+
+#calendarMonth div {
+    margin: 0;
+    padding: 0;
+}
+
+#calendarMonth span {
+    display: inline-block;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 290px;
+}
+
+#calendarMonth #prev {
+    float: left;
+}
+
+#calendarMonth #next {
+    float: right;
+}
+
+#month {
+    text-align: center;
+}
+
+#weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    font-size: 20px;
+}
+
+#weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #666;
+    text-align: center;
+}
+
+#days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    border-radius: 0 0 0.7em 0.7em;
+}
+
+#days li {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #777;
+}
+
+#days li:hover {
+  background-color: #ffc;
+}
+
+.today {
+    background-color: white;
+    border: 3px solid black;
+}
+
+.clickedDay {
+  background-color: yellow;
+}
+
+
+/*-----------------------------------SCHEDULE--------------------------------- */
+
+#hiddenContainer {
+    position:  absolute;
+    left: 500px;
+    top: 0;
+
+    border-style: hidden;
+    border: 1px solid #000;
+    width: 27em;
+    margin: 1em 1em 1em 1em;
+    /*
+  border-style: hidden;
+  border: 1px ;
+  width: 27em;
+  margin: 1em 1em 1em 1em;
+  */
+}
+
+#newEvent {
+    border: 1px solid #000;
+    width: 100%;
+    height: 20em;
+    margin: 10px 10px 10px 0;
+    background-color: white;
+}
+
+#cancelBtn {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+    text-align: right;
+    margin: 5px 5px 5px 5px;
+}
+
+.hiddenEvent {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#selected {
+    text-align: justify;
+    margin: 10px 15px 30px 50px;
+}
+
+#selectedDateSpan {
+    padding-left: 10px;
+}
+
+#startHourSpan {
+    text-align: justify;
+    margin: 10px 10px 10px 50px;
+}
+
+#startHour {
+    margin: 0 100px 15px 0;
+}
+
+#endHourSpan {
+    text-align: justify;
+    margin: 10px 15px 10px 50px;
+}
+
+#endHour {
+    margin: 0 100px 15px 0;
+}
+
+#taskSpan {
+    text-align: justify;
+    margin: 10px 48px 10px 50px;
+}
+
+#task {
+    vertical-align: text-top;
+    min-height: 90px;
+    max-height: 90px;
+    resize: none;
+}
+
+#addBtn {
+    display: block;
+    margin-top: 15px;
+}
+
+.deleteEvent {
+    color: red;
+    text-align: right;
+    margin: 2px 2px 0 2px;
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#calendarEvent {
+    background-color: white;
+    width: 25em;
+    border: solid 5px;
+    border-radius: 1em;
+    border-color: white;
+    margin: 1em 1em 1em 1em;
+    display: block;
+}
+
+#calendarEvent:empty {
+  display: none;
+}
+
+#calendarSection {
+    border: 1px solid black;
+    height: 6em;
+    width: 22em;
+    margin: 1em 1em 1em 1em;
+    display: block;
+    /*
+  width: 25em;
+  height: 12em;
+  border: solid 5px;
+  border-radius: 1em;
+  border-color: white;
+  box-shadow:  0px 0px 50px white;
+  margin: 1em 1em 1em 1em;
+  background: black;
+  display: block;
+  */
+}

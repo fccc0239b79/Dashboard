@@ -1,0 +1,111 @@
+
+/*----------------------------------BUTTONS--------------------------------------*/
+#controlButtons {
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+
+#deleteButton {
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  color: red;
+  width: 20px;
+  margin: 1px 1px 1px 1px;
+  padding: 3px 3px 3px 3px;
+  float: right;
+}
+
+#backButton {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffc;
+}
+
+#nextButton {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffc;
+}
+
+#addButton {
+  margin-right: 5px;
+  background-color: #ff3;
+  border: 1px solid #ff0;
+  font-weight: bold;
+}
+
+#saveButton {
+  width: 102px;
+  margin-left: 5px;
+  background-color: #ff3;
+  border: 1px solid #ff0;
+  font-weight: bold;
+}
+
+/*---------------------STICKY-NOTES---------------------------------------------------------*/
+#stickyNotesPanel {
+  position:  absolute;
+  /*Initial position*/
+  left: 0;
+  top: 0;
+
+
+  border: solid 1px;
+  border-style: hidden;
+  margin: 1em 1em 1em 1em;
+  width: 26em;
+}
+
+.note {
+  float: left;
+  position: relative;
+  color: #000;
+  background: #ffc;
+  display: inline-block;
+  height: 20em;
+  min-width: 20em;
+  max-width: 20em;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0px 0px 50px white;
+  border-radius: 1em;
+}
+
+.stickyNotes  {
+  list-style: none;
+  padding: 0 15px 0 15px;
+  display: flex;
+  height: 355px;
+  width: 417px;
+}
+
+.stickyNotes .note img {
+  padding: 1px 3px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.stickyNotes .note textarea {
+  background: rgba(0, 0, 0, 0);
+  resize: none;
+  padding: 3px;
+  border-style: none;
+}
+
+.noteTitle {
+  font-size: 160%;
+  font-weight: bold;
+  height: 30px;
+  width: 70%;
+  margin: 1px 1px 1px 1px;
+}
+
+.noteContent {
+  font-size: 140%;
+  height: 80%;
+  width: 100%;
+}

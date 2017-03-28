@@ -1,0 +1,158 @@
+#weatherPanel {
+  position:  absolute;
+  left: 1000px;
+  top: 0;
+
+
+  width: 40em;
+  height: 24em;
+  border: solid 5px;
+  border-radius: 1em;
+  border-color: white;
+  box-shadow: 0px 0px 50px white;
+  margin: 1em 1em 1em 1em;
+  background-repeat: no-repeat;
+  /*background: pink;*/
+  /*background-image: url("earth.jpg");*/
+  display: flex;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#weatherTempContainer {
+  /*border: 1px solid;*/
+  border-radius: 0.7em 0 0 0.7em;
+  width: 318px;
+  height: auto;
+  margin: 0;
+/*  background-color: yellow;*/
+  align-items: center;
+  justify-content: center;
+}
+
+#weatherDataContainer {
+  background-color: white;
+
+  border-radius:  0 0.7em 0.7em 0;
+  width: 318px;
+  height: 374px;
+  margin: 0;
+  display: block;
+  opacity: 0.8;
+}
+
+#icon {
+  width: 20em;
+  height: 13em;
+  padding: 20px 55px 20px 55px;
+
+}
+
+#message {
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+}
+
+#town {
+  height: 100px;
+  border-radius: 0 0 0 0.2em;
+  font-size: 50px;
+  text-align: center;
+  padding: 18px 0 18px 0;
+  color: white;
+  background-color: red;
+  opacity: 0.7;
+}
+
+#todayTemp {
+/*  border: 1px solid; */
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-size: 120px;
+}
+
+#nextDays {
+  text-align: center;
+  font-size: 18px;
+  height: 219px;
+  display: flex;
+}
+
+#secondWeatherTemp {
+
+height: 200px;
+width: 100px;
+}
+
+#thirdWeatherTemp {
+
+height: 200px;
+width: 100px;
+}
+
+#fourthWeatherTemp {
+
+  height: 200px;
+  width: 100px;
+}
+#tomorrowDay0 {
+  margin-bottom: 20px;
+}
+
+#icon0 {
+    margin-bottom: 10px;
+}
+#futureMessage0 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+#futureTemp0 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#icon1 {
+    margin-bottom: 10px;
+}
+
+#tomorrowDay1 {
+margin-bottom: 20px;
+}
+
+#futureMessage1 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+#futureTemp1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#icon2 {
+    margin-bottom: 10px;
+}
+
+#tomorrowDay2 {
+margin-bottom: 20px;
+}
+
+#futureMessage2 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+#futureTemp2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#dayPanel {
+    padding-top: 20px;
+    width: 102px;
+    height: 218px;
+}

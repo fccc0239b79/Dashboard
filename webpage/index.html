@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stickyNotesStyle.css">
+    <link rel="stylesheet" href="styles/calendarStyle.css">
+    <link rel="stylesheet" href="styles/weatherStyle.css">
+    <link rel="stylesheet" href="styles/newsStyle.css">
+
+</head>
+
+<!--<body id="bodyTarget" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"> -->
+<body>
+
+    <!-- create sticky notes -->
+    <main id="main" class="dropzone" >
+
+        <!-- create sticky notes, this part is on the server ? -->
+
+    <!--    <div id="stickyNotesPanel" draggable="true" ondragstart="dragstart_handler(event);"> -->
+  <div id="stickyNotesPanel" draggable="true" class="dragMe">
+
+    <ul class="stickyNotes" id="notes">
+        <div id="backButton">&#10094;</div>
+
+        <li class="note">
+            <textarea class="noteTitle" id='tit' placeholder="Untitled" maxlength="20"></textarea>
+            <div id="deleteButton" alt="delete">X</div>
+            <textarea class="noteContent" id='con' placeholder="Your content here"></textarea>
+
+            <div id="controlButtons">
+
+                <button id="addButton" alt="add Sticky Note">Add New Note</button>
+                <button id="saveButton" alt="save StickyNote to DB">Save</button>
+
+            </div>
+        </li>
+        <div id="nextButton">&#10095;</div>
+    </ul>
+</div>
+
+<div id="hiddenContainer" draggable="true" class="dragMe">
+    <div id="calendarPanel">
+        <p id="calendarTime"></p>
+        <p id="calendarDay"></p>
+
+        <p id="calendarDate" onclick="toggleFullCalendar()"></p>
+    </div>
+
+    <!-- Full Calendar Panel-->
+    <div id="calendarContainer">
+
+        <div id="calendarMonth">
+
+            <div id="prev">&#10094;</div>
+            <span id="month"> <div id="year"></div> </span>
+            <div id="next">&#10095;</div>
+
+        </div>
+
+        <ul id="weekdays">
+
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+            <li>Sun</li>
+
+        </ul>
+
+        <ul id="days"></ul>
+
+        <div id="newEvent" class="hiddenEvent">
+            <div id="cancelBtn">X</div>
+            <div id="selected">Selected Day: <span id="selectedDateSpan"></span></div>
+            <span id="startHourSpan">Start Hour:</span><input type="time" name="startHour" value="" id="startHour">
+            <span id="endHourSpan">End Hour:</span><input type="time" name="endHour" value="" id="endHour">
+            <span id="taskSpan">Task:</span><textarea id='task' placeholder="Your plans here" maxlength="100"></textarea>
+            <button id="addBtn" type="button" alt="add event">Add</button>
+
+        </div>
+    </div>
+    <!--<div id="shedule"></div> -->
+    <div id="calendarEvent"></div>
+</div>
+
+
+<div id="weatherPanel" draggable="true" class="dragMe">
+    <div id="weatherTempContainer">
+        <img id="icon"></img>
+        <div id="message"></div>
+        <div id="town"></div>
+
+    </div>
+    <div id="weatherDataContainer">
+        <!--<span>&#8451;</span> -->
+        <div id="todayTemp"></div>
+
+        <section id="nextDays">
+            <div id="dayPanel">
+
+                <p id="tomorrowDay0"></p>
+                <img id="icon0"></img>
+                <p id="futureMessage0"></p>
+                <p id="futureTemp0"></p>
+            </div>
+            <div id="dayPanel">
+
+                <p id="tomorrowDay1"></p>
+                <img id="icon1"></img>
+                <p id="futureMessage1"></p>
+                <p id="futureTemp1"></p>
+            </div>
+
+            <div id="dayPanel">
+                <p id="tomorrowDay2"></p>
+                <img id="icon2"></img>
+                <p id="futureMessage2"></p>
+                <p id="futureTemp2"></p>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="newsPanel" draggable="true" class="dragMe">
+    <div id="newsContainer">
+        <img id="newsSettingsBtn" src="images/gear.png" alt="settings gear btn" draggable="false"></img>
+        <img id="newsPicturePanel" alt="news" draggable="false"></img>
+        <div id="newsTitlePanel"></div>
+        <div id="newsTextPanel"></div>
+    </div>
+    <div id="newsSettingsContainer">
+        <button id="switchBtn" type="button">Switch Panel</button>
+        <select id="categories">
+              <option value="void">Categories</option>
+              <option value="business">Business</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="gaming">Gaming</option>
+              <option value="general">General</option>
+              <option value="music">Music</option>
+              <option value="sport">Sport</option>
+              <option value="technology">Technology</option>
+            </select>
+    </div>
+</div>
+
+    </main>
+
+    <script src="js_scripts/stickyNotes.js"></script>
+    <script src="js_scripts/calendar.js"></script>
+    <script src="js_scripts/weather.js"></script>
+    <script src="js_scripts/news.js"></script>
+    <script src="js_scripts/dragAndDrop.js"></script>
+    <script src="js_scripts/storage.js"></script>
+
+    </script>
+
+</body>
+
+</html>

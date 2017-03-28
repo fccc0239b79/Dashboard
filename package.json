@@ -1,0 +1,18 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "Dashboard Server",
+  "scripts": {
+    "forever": "node_modules/.bin/nodemon -i API/server",
+    "initsql": "mysql -u root -p < sql_init.sql"
+
+  },
+  "main": "stickyNotes.js",
+
+  "author": "750825",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mysql": "^2.5.4"
+  }
+}
